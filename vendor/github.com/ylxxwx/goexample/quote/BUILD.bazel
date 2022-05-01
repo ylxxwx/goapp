@@ -1,0 +1,9 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "quote",
+    srcs = ["quote.go"],
+    importmap = "test.hello/vendor/github.com/ylxxwx/goexample/quote",
+    importpath = "github.com/ylxxwx/goexample/quote",
+    visibility = ["//visibility:public"],
+)

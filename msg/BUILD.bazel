@@ -1,0 +1,9 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "msg",
+    srcs = ["msg.go"],
+    importpath = "test.hello/msg",
+    visibility = ["//visibility:public"],
+    deps = ["//vendor/github.com/ylxxwx/goexample/quote"],
+)
